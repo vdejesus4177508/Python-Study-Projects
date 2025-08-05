@@ -25,7 +25,11 @@ print(foo2)
 footup = tuple(foo2)
 print(footup)
 
-print (footup.count(foo2))
+print(footup.count(foo2))
+
+
+
+
 
 
 
