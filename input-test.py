@@ -12,9 +12,13 @@ response = verif.lower()
 
 #run the multiplication table if the user confirms
 if response == 'y':
-    for multiplier in range(lb, ub + 1):
-        for i in range(1, 12):
-            print(i, "x", multiplier, "=", i * multiplier)
+    with open("multiplication_table.txt", "w") as f:
+
+        # Loop through the range and write to the file
+        for multiplier in range(lb, ub + 1):
+            for i in range(1, 12):
+                f.write(f"{i} x {multiplier} = {i * multiplier}\n")
+    print("Multiplication table has been written to multiplication_table.txt")
 else:
     print("We're done!")
 
