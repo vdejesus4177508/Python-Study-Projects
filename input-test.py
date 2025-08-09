@@ -12,7 +12,7 @@ response = verif.lower()
 
 #run the multiplication table if the user confirms
 if response == 'y':
-    with open("multiplication_table.txt", "w") as f:
+    with open("Multiplication/multiplication_table.txt", "w") as f:
 
         # Loop through the range and write to the file
         for multiplier in range(lb, ub + 1):
